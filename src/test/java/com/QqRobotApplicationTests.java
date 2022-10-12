@@ -42,7 +42,7 @@ class QqRobotApplicationTests {
             case 12:
                 System.out.println("1113");Msg="你好";break;
             default:
-
+                System.out.println("你好");
         }    System.out.println(Msg);
     }
 
