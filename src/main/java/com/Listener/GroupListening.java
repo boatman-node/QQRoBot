@@ -337,4 +337,16 @@ public class GroupListening implements com.Monitor.GroupListening {
         sender.SENDER.sendGroupMsg(privateMsg, httpConfigure.GetReptileString(allInterfaces.getGitHub() + Name, 20).replace("名字：", "\n")
                 .replace("类型：", "\n").replace("时间：", "\n").replace("链接：", "\n"));
     }
+    @Async
+    @Filter(value = "快手", matchType = MatchType.STARTS_WITH)
+    @Override
+    public void twistWaist(GroupMsg groupMsg, MsgSender sender) {
+         sender.SENDER.sendGroupMsg(groupMsg,allInterfaces.getTwistWaist());
+    }
+    @Async
+    @Filter(value = "美女视频", matchType = MatchType.STARTS_WITH)
+    @Override
+    public void videoBeauties(GroupMsg groupMsg, MsgSender sender) {
+        sender.SENDER.sendGroupMsg(groupMsg,allInterfaces.getVideoBeauties());
+    }
 }

@@ -10,6 +10,10 @@ public class AllInterfaces {
     private String DateTask="http://ovooa.com/API/BaoShi/api.php?msg=";
     /**疫情查询*/
     private String epidemicInquiry="https://xiaobai.klizi.cn/API/other/yiqing.php?city=";
+    /**扭腰*/
+    private String twistWaist="http://api.xn--7gqa009h.top/api/nysp/";
+    /**美女视频*/
+    private String videoBeauties="http://api.5yzs.cn/api/mn/index.php";
     /**全球ip查询*/
     private String ipSelect="https://xiaobai.klizi.cn/API/other/IP.php?IP=";
     /**60秒懂得世界*/

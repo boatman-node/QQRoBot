@@ -25,7 +25,7 @@ public class                                                                    
     StringTools stringTools;
 
     /**语音报时*/
-    @Scheduled(cron = "0 0 7,12,20 * * ? ")
+    @Scheduled(cron = "0 0 8,12,20 * * ? ")
     @Override
     public void TackVoice() {
         String Number[]={"120520629","809947186","873506537","913168658","810449108"};

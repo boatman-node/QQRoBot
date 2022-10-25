@@ -24,4 +24,6 @@ public interface GroupListening {
     void searchImages(GroupMsg privateMsg, MsgSender sender,String Name);
     void videoPlayBack(GroupMsg privateMsg, MsgSender sender,String Name);
     void GitHub(GroupMsg privateMsg, MsgSender sender,String Name);
+    void twistWaist(GroupMsg groupMsg,MsgSender sender);
+    void videoBeauties(GroupMsg groupMsg,MsgSender sender);
 }
