@@ -19,6 +19,7 @@ import java.io.IOException;
 
 @OnGroup
 @Component
+
 public class GroupListening implements com.Monitor.GroupListening {
     @Autowired
     HttpConfigure httpConfigure;
@@ -333,9 +334,7 @@ public class GroupListening implements com.Monitor.GroupListening {
     @Filter(value = "github{{Name}}", matchType = MatchType.REGEX_MATCHES)
     @Override
     public void GitHub(GroupMsg privateMsg, MsgSender sender,@FilterValue("Name")String Name) {
-        sender.SENDER.sendGroupMsg(privateMsg,httpConfigure.GetReptileString(allInterfaces.getGitHub() + Name, 20).replace("名字：","\n")
-                .replace("类型：","\n").replace("时间：","\n").replace("链接：","\n"));
+        sender.SENDER.sendGroupMsg(privateMsg, httpConfigure.GetReptileString(allInterfaces.getGitHub() + Name, 20).replace("名字：", "\n")
+                .replace("类型：", "\n").replace("时间：", "\n").replace("链接：", "\n"));
     }
-
-
 }

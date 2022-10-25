@@ -16,10 +16,6 @@ public class AllInterfaces {
     private String sixtySeconds="https://xiaobai.klizi.cn/API/other/60s.php";
     /**摸鱼日历*/
     private String calendar="https://api.vvhan.com/api/moyu";
-    /**快手查询---n*/
-    private String quickQuery="https://xiaobai.klizi.cn/API/video/ks_Search.php?data=&msg=";
-    /**bliBli查询---n*/
-    private String bliBliQuery="https://xiaobai.klizi.cn/API/dxgn/bilibili.php?data=&msg=";
     /**搜图*/
     private String searchImages="https://api.yuxli.cn/api/st.php?ty=";
     /**美腿*/

@@ -32,7 +32,7 @@ public class                                                                    
         String Msg=null;
         int i = stringTools.DataTack();
         switch (i) {
-            case 19:
+            case 7:
                 Msg = "早上起来,面向太阳,付出就会有收获，或大或小，或迟或早，始终不会辜负你的努力！早安!" + "\n今天你给船夫github点赞了吗？\n会努力写代码吗？" + catCode.CatPicture(allInterfaces.getCalendar());
                 break;
             case 12:
