@@ -1,7 +1,9 @@
 package com;
 
 import com.Servcie.RedisServe;
+import com.Tools.HttpConfigure;
 import com.Tools.StringTools;
+import com.entity.AllInterfaces;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +16,10 @@ import java.util.Scanner;
 class QqRobotApplicationTests {
     @Autowired
     RedisServe redisServe;
+    @Autowired
+    HttpConfigure configure;
+    @Autowired
+    AllInterfaces allInterfaces;
     @Test
     void contextLoads() {
         redisServe.set("你好","我是");
@@ -45,5 +51,8 @@ class QqRobotApplicationTests {
                 System.out.println("你好");
         }    System.out.println(Msg);
     }
-
+    @Test
+    void  Test04(){
+        System.out.println(configure.GetReptileString(allInterfaces.getGuShiCi(), 2));
+    }
 }

@@ -32,21 +32,21 @@ public class                                                                    
         String Msg=null;
         int i = stringTools.DataTack();
         switch (i) {
-            case 7:
-                Msg = "早上起来,面向太阳,付出就会有收获，或大或小，或迟或早，始终不会辜负你的努力！早安!" + "\n今天你给船夫github点赞了吗？\n会努力写代码吗？" + catCode.CatPicture(allInterfaces.getCalendar());
+            case 8:
+                Msg = httpConfigure.GetReptileString(allInterfaces.getGuShiCi(),1000)+ "\n今天你给船夫github点赞了吗？\n会努力写代码吗？" + catCode.CatPicture(allInterfaces.getCalendar());
                 break;
             case 12:
-                Msg = "清水煮岁月，不悲不喜，做个远离尘世，安安静静的女子，是毕生的愿望，但凡尘浮华众多，怎也无法远离俗世，身处大染缸，脚怎有不湿的道理？\n午安！";
+                Msg =  httpConfigure.GetReptileString(allInterfaces.getGuShiCi(),1000)+"\n午安！";
                 break;
             case 20:
-                Msg = "生活总是这样，不能叫人处处都满意。但我们还要热情地活下去。人活一生，值得爱的东西很多，不要因为一个不满意，就灰心。\n晚安！";
+                Msg =  httpConfigure.GetReptileString(allInterfaces.getGuShiCi(),1000)+"\n晚安";
                 break;
         }
         for (int j = 0; j <Number.length; j++) {
             botManager.getDefaultBot().getSender().SENDER.sendGroupMsg(Number[j],Msg);
         }
         }
-    @Scheduled(cron = "0 0 0/2 * * ?")
+    @Scheduled(cron = "0 0 0/6 * * ?")
     @Override
     public void TackPicture() {
         String Number[]={"120520629","809947186","913168658"};

@@ -24,7 +24,11 @@ public class StringTools {
                 +"\uD83C\uDFAD12."+"文章"+"\n"
                 +"\uD83C\uDFAD13."+"测运气{{名字}}"+"\n"
                 +"\uD83C\uDFAD14."+"搜图{{名字}}"+"\n"
-                +"\uD83C\uDFAD15."+"GitHub{{项目名称}}"+"\n";
+                +"\uD83C\uDFAD15."+"GitHub{{项目名称}}"+"\n"
+                +"\uD83C\uDFAD15."+"快手"+"\n"
+                +"\uD83C\uDFAD15."+"搜视频{{Msg}}"+"\n"
+                +"\uD83C\uDFAD16."+"星期四"+"\n"
+                +"\uD83C\uDFAD16."+"美女视频"+"\n";
     }
 
     public String GetEmoJiMenu(){

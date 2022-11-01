@@ -349,4 +349,10 @@ public class GroupListening implements com.Monitor.GroupListening {
     public void videoBeauties(GroupMsg groupMsg, MsgSender sender) {
         sender.SENDER.sendGroupMsg(groupMsg,allInterfaces.getVideoBeauties());
     }
+    @Async
+    @Filter(value = "星期四", matchType = MatchType.STARTS_WITH)
+    @Override
+    public void KDJ(GroupMsg groupMsg, MsgSender sender) {
+        sender.SENDER.sendGroupMsg(groupMsg,catCode.voiceCat(allInterfaces.getKDJ()));
+    }
 }

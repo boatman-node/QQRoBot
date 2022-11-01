@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 public class AllInterfaces {
     /**时间报时*/
     private String DateTask="http://ovooa.com/API/BaoShi/api.php?msg=";
+    /**星期四*/
+    private String KDJ="http://ovooa.com/API/BaoShi/api.php?msg=";
+    /**古诗词*/
+    private  String GuShiCi="https://api.guyunge.top/API/gushi.php";
     /**疫情查询*/
     private String epidemicInquiry="https://xiaobai.klizi.cn/API/other/yiqing.php?city=";
     /**扭腰*/

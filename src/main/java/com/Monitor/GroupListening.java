@@ -26,4 +26,5 @@ public interface GroupListening {
     void GitHub(GroupMsg privateMsg, MsgSender sender,String Name);
     void twistWaist(GroupMsg groupMsg,MsgSender sender);
     void videoBeauties(GroupMsg groupMsg,MsgSender sender);
+    void KDJ(GroupMsg groupMsg,MsgSender sender);
 }
